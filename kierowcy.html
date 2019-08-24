@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .center-block{
+        float: none;
+        }
+    </style>
+</head>
+<body ng-app="aplikacjaKierowcy">
+<div class="container" ng-container="kontrolerTabeliKierowców">
+
+</div>
+<script src="javascripts/angular.js"></script>
+<script>
+var aplikacja = angular.module('aplikacjaKierowcy',[]);
+aplikacja.controller('kontrolerTabeliKierowców',['$scope'],['$filter'], function($scope, $filter){
+    $scope.kierowcy= [
+
+    {
+        "m": "1.",
+        "kierowca": "Lewis Hamilton",
+        "kraj": "Wlk. Brytania",
+        "zespół": "Mercedes",
+        "pkt.": "250"
+    },
+    {
+        "m": "2.",
+        "kierowca": "Valtteri Bottas",
+        "kraj": "Finlandia",
+        "zespół": "Mercedes",
+        "pkt.": "188"
+    },
+    {
+        "m": "3.",
+        "kierowca": "Max Verstappen",
+        "kraj": "Holandia",
+        "zespół": "Red Bull Racing",
+        "pkt.": "181"
+    },
+    {
+        "m": "4.",
+        "kierowca": "Sebastian Vettel",
+        "kraj": "Niemcy",
+        "zespół": "Ferrari",
+        "pkt.": "156"
+    },
+    {
+        "m": "5.",
+        "kierowca": "Charles Leclerc",
+        "kraj": "Monako",
+        "zespół": "Ferrari",
+        "pkt.": "132"
+    },
+    {
+        "m": "6.",
+        "kierowca": "Pierre  Gasly",
+        "kraj": "Francja",
+        "zespół": "Red Bull Racing",
+        "pkt.": "63"
+    },
+    {
+        "m": "7.",
+        "kierowca": "Carlos Sainz ",
+        "kraj": "Hiszpania",
+        "zespół": "McLaren",
+        "pkt.": "58"
+    },
+    {
+        "m": "8.",
+        "kierowca": "Kimi Raikkonen",
+        "kraj": "Finlandia",
+        "zespół": "Alfa Romeo Racing",
+        "pkt.": "31"
+    },
+    {
+        "m": "9.",
+        "kierowca": "Daniił Kwiat",
+        "kraj": "Rosja",
+        "zespół": "Toro Rosso",
+        "pkt.": "27"
+    },
+    {
+        "m": "10.",
+        "kierowca": "Lando Norris",
+        "kraj": "Wielka Brytania",
+        "zespół": "McLaren",
+        "pkt.": "24"
+    },
+    {
+        "m": "11.",
+        "kierowca": "Daniel Ricciardo",
+        "kraj": "Australia",
+        "zespół": "Renault",
+        "pkt.": "22"
+    },
+    {
+        "m": "12.",
+        "kierowca": "Lance Stroll",
+        "kraj": "Kanada",
+        "zespół": "Racing Point",
+        "pkt.": "18"
+    },
+    {
+        "m": "13.",
+        "kierowca": "Kevin Magnussen",
+        "kraj": "Dania",
+        "zespół": "Haas",
+        "pkt.": "18"
+    },
+    {
+        "m": "14.",
+        "kierowca": "Nico Hulkenberg",
+        "kraj": "Niemcy",
+        "zespół": "Renault",
+        "pkt.": "17"
+    },
+    {
+        "m": "15.",
+        "kierowca": "Alexander Albon",
+        "kraj": "Tajlandia",
+        "zespół": "Toro Rosso",
+        "pkt.": "16"
+    },
+    {
+        "m": "16.",
+        "kierowca": "Sergio Perez",
+        "kraj": "Meksyk",
+        "zespół": "Racing Point",
+        "pkt.": "13"
+    },
+    {
+        "m": "17.",
+        "kierowca": "Romain Grosjean",
+        "kraj": "Francja",
+        "zespół": "Haas",
+        "pkt.": "8"
+    },
+    {
+        "m": "18.",
+        "kierowca": "Antonio Giovinazzi",
+        "kraj": "Włochy",
+        "zespół": "Alfa Romeo Racing",
+        "pkt.": "1"
+    },
+    {
+        "m": "19.",
+        "kierowca": "Robert Kubica",
+        "kraj": "Polska",
+        "zespół": "Williams",
+        "pkt.": "1"
+    },
+    {
+        "m": "20.",
+        "kierowca": "George Russell",
+        "kraj": "Wielka Brytania",
+        "zespół": "Williams",
+        "pkt.": "0"
+    }
+]
+};
+
+</script>
+</body>
+</html>
