@@ -6,8 +6,22 @@
 </head>
 <body>
 <h2>Hello World !</h2>
-<button type="button" onclick=" alert('Hello World !');">Kliknij mnie</button>
+
+<p id="paragraph">Foo bar!</p>
+
+
+<button type="button" onclick=" changeParagraph();">Kliknij mnie</button>
 <script>
+    function changeParagraph(){
+        let elementById = document.getElementById("paragraph");
+        let fooBar = "Foo bar!";
+        let barFoo = "Bar Foo!";
+        if(elementById.innerHTML === fooBar){
+        elementById.innerHTML = barFoo;
+        }else{
+        elementById.innerHTML = fooBar;
+        }
+    }
     console.log('Hello World222!');
 </script>
 </body>
